@@ -26,8 +26,17 @@ An instant translation tool that works 100% offline without relying on AI models
    pip install -r requirements.txt
    ```
 3. Install language packages (run once):
+
    ```bash
-   python install_language_packages.py
+   # Update package index
+   python -m argostranslate.package update_index
+   # Install required language pairs (English → French, Spanish, German, Italian, Portuguese, Dutch)
+   python -m argostranslate.package install en_fr
+   python -m argostranslate.package install en_es
+   python -m argostranslate.package install en_de
+   python -m argostranslate.package install en_it
+   python -m argostranslate.package install en_pt
+   python -m argostranslate.package install en_nl
    ```
 
 ## Usage
